@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body { font-family: Verdana, "Arial", Helvetica, sans-serif;}
+
+.clear { clear: both;}
+
+/*wrap for header class*/
+.header {
+  background: #2D2F35 url(../images/bg_home_intro.gif) no-repeat;
+  border-bottom: solid 1px #3F4249;
+}
+
+/*wrap for info class*/
+.info {
+  background: url(../images/bg_home_intro.gif) repeat-x;
+  height: 300px;
+  position: relative;
+}
+
+.frame{
+  width: 1250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.frame-text {
+  width: 400px;
+  margin-left: 10%;
+  position: relative;
+}
+
+.info h3{
+  font-size: 26px;
+  padding-bottom: 22px;
+  color: yellow;
+  font-family: intial;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+.info p{
+  text-align: left;
+}
+
+p { 
+  color: white;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.info img {
+  position: absolute;
+  top: 0;
+  margin-left: 50%;
+}
+
+/*wrap for slidebar class*/
+.slidebar { 
+  background: #2D2F35;
+  border-bottom: solid 1px #3F4249;
+  border-top: solid 1px #3F4249;
+}
+
+.frame ul{
+  list-style-type: none;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 10px;
+}
+
+.frame li {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px; 
+}
+.frame ul li a { display: inline-block;}
+
+/*picture of sildebar*/
+.picture {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+/*wrap for content class*/
+.content { 
+  background: #2D2F35;
+  border-bottom: solid 1px #3F4249;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  height: 380px;
+}
+
+h4 {
+  color: yellow;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+.content-left{
+  background: url(../images/home_services_bg_design.gif) no-repeat right bottom;
+  float: left;
+  width: 35%;
+  padding-bottom: 3%;
+  margin-left: 6.6%;
+  margin-right: 9%;
+}
+
+.content-right{
+  float: right;
+  width: 42%;
+  background: url(../images/home_services_bg_marketing.gif) no-repeat left top;
+ 
+}
+
+.content-right h4 { padding-bottom: 45px;}
+
+.frame-text-content {
+  margin-left: 0;
+  width: 400px;
+  position: relative;
+}
+
+/*wrap for footer class*/
+.footer {
+  height: 100px;
+  background: #24262A url(../images/bg_footer.gif) center no-repeat;
+}
+.footer p {
+  text-align: center;
+  font-size: 12px;
+}
