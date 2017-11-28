@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Slider</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="gallery" >	
+		<div class="slideshow">
+			<span id="prev" onClick="prev();">prev</span>
+			<div id="item1" ><img src="images/1.jpg" alt=""></div>
+			<div id="item2" ><img src="images/2.jpg" alt=""></div>
+			<div id="item3" ><img src="images/3.jpg" alt=""></div>
+			<div id="item4"><img src="images/4.jpg" alt=""></div>
+			<div id="item5"><img src="images/5.jpg" alt=""></div>
+			<span id="next" onClick="next();">next</span>
+		</div>
+		<div class="index">
+			<img id="index1" class="index_img" src="images/1.jpg" alt="" style="border #4px solid #00ccff !important;" onClick="onClickIndex(this);">
+			<img id="index2" class="index_img" src="images/2.jpg" alt="" onClick="onClickIndex(this);">
+			<img id="index3" class="index_img" src="images/3.jpg" alt="" onClick="onClickIndex(this);">
+			<img id="index4" class="index_img" src="images/4.jpg" alt="" onClick="onClickIndex(this);">
+			<img id="index5" class="index_img" src="images/5.jpg" alt="" onClick="onClickIndex(this);">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slider.js" ></script>
+</body>
+</html>
