@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar JQuery</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div id="text-day">
+				<input id="date_now" type="text" name="date_now" placeholder=" dd/mm/yy" onkeydown="hiddenTableCalendar();">
+				<img src="images/calendar.jpg" alt="calendar">
+			</div>
+			<table id="table_calendar">
+				<tr class="choose">
+					<td id="pre_Year">&lt;&lt;</td>
+					<td id="pre_Month">&lt;</td>
+					<td colspan="2">
+						<select id="months"></select>
+					</td>
+					<td>
+						<select id="years"></select>
+					</td>
+					<td id="next_Month">&gt;</td>
+					<td id="next_Year">&gt;&gt;</td>
+				</tr>
+				<tr class="weekdays">
+					<td>Sun</td>
+					<td>Mon</td>
+					<td>Tue</td>
+					<td>Web</td>
+					<td>Thu</td>
+					<td>Fri</td>
+					<td>Sat</td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/calendar.js"></script>
+	</body>
+</html>
