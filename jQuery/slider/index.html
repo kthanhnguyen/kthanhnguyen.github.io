@@ -9,22 +9,26 @@
 <body>
 	<div class="gallery" >	
 		<div class="slideshow">
-			<span id="prev" onClick="prev();">prev</span>
-			<div id="item1" ><img src="images/1.jpg" alt=""></div>
-			<div id="item2" ><img src="images/2.jpg" alt=""></div>
-			<div id="item3" ><img src="images/3.jpg" alt=""></div>
-			<div id="item4"><img src="images/4.jpg" alt=""></div>
-			<div id="item5"><img src="images/5.jpg" alt=""></div>
-			<span id="next" onClick="next();">next</span>
-		</div>
-		<div class="index">
-			<img id="index1" class="index_img" src="images/1.jpg" alt="" style="border #4px solid #00ccff !important;" onClick="onClickIndex(this);">
-			<img id="index2" class="index_img" src="images/2.jpg" alt="" onClick="onClickIndex(this);">
-			<img id="index3" class="index_img" src="images/3.jpg" alt="" onClick="onClickIndex(this);">
-			<img id="index4" class="index_img" src="images/4.jpg" alt="" onClick="onClickIndex(this);">
-			<img id="index5" class="index_img" src="images/5.jpg" alt="" onClick="onClickIndex(this);">
+			<span id="prev">prev</span>
+			<div id="item1" class="slide_img"><img src="images/1.jpg" alt=""></div>
+			<div id="item2" class="slide_img"><img src="images/2.jpg" alt=""></div>
+			<div id="item3" class="slide_img"><img src="images/3.jpg" alt=""></div>
+			<div id="item4" class="slide_img"><img src="images/4.jpg" alt=""></div>
+			<div id="item5" class="slide_img"><img src="images/5.jpg" alt=""></div>
+			<span id="next">next</span>
+
+			<div class="index">
+				<ul class="index-menu">
+	 				<li id="index1" class="circle"></li>
+					<li id="index2" class="circle"></li>
+					<li id="index3" class="circle"></li>
+	 				<li id="index4" class="circle"></li>
+					<li id="index5" class="circle"></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/slider.js" ></script>
 </body>

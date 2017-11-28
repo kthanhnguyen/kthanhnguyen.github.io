@@ -1,61 +1,52 @@
 var currentIndex = 1;
-var indexLength = countChildDiv();
-var sliderDiv = $(".slideshow");
-var index_img = $(".index_img");
+var run;
+var slideshow = $(".slide_img");
+var index_menu = $(".circle");
 
-setInterval(next,3000);
+$(document).ready(function() {
+   showImage();
+});
 
-function countChildDiv() {
-	return $(".slideshow > div").length;
-}
+function showImage() {
+	if (currentIndex > 4) {
+		currentIndex = 0;
+	}
 
-function next() {
-	hideImage(currentIndex);
-	if (currentIndex < indexLength) {
+	if (currentIndex < 0) {
+		currentIndex = 4;
+	}
+
+	slideshow.slideUp();
+	slideshow.eq(currentIndex).fadeIn();
+	currentImage();
+	clearTimeout(run);
+	run = setTimeout(function() {
 		currentIndex++;
-	} else if(currentIndex == indexLength) {
-		currentIndex = 1;
-	}
-	showImage(currentIndex);
+		console.log(currentIndex);
+		showImage();
+	}, 2000);
 }
 
-function prev() {
-	hideImage(currentIndex);
-	if (currentIndex > 1) {
-		currentIndex--;
-	} else if(currentIndex == 1) {
-		currentIndex = indexLength;
-	}
-	showImage(currentIndex);
+function currentImage() {
+	index_menu.removeClass("active");
+	index_menu.eq(currentIndex).addClass("active");
 }
 
-function showImage(index) {
-	$("#item" + index).fadeIn();
-	$("#index" + index).css('border','#4px solid #00ccff');
-}
+$("#prev").click(function() {
+	currentIndex--;
+	console.log("prev: ",currentIndex);
+	showImage();
+});
 
-function hideImage(index) {
-	$("#item" + index).slideUp();
-	$("#index" + index).css('border','#4px solid #555');
-}
+$("#next").click(function() {
+	currentIndex++;
+	console.log("next: ",currentIndex);
+	showImage();
+});
 
-
-function onClickIndex(foo) {
-	var prevIndex;
-	var id = foo.id;
-	currentIndex = id.substr(5,1);	
-	if(currentIndex == 1) {
-		prevIndex = 5;
-	} else {
-		prevIndex = currentIndex - 1;
-	}
-	hideImage(prevIndex);
-	showImage(currentIndex);
-	for(i = 1; i <= indexLength; i++) {
-		if (i == currentIndex) {
-			$("#index" + i).css('border','#4px solid #00ccff');
-		} else {
-			$("#index" + i).css('border','#4px solid #555');
-		}
-	}
-}
+//event when click image index (the ball).
+$(".circle").click(function() {
+	currentIndex = index_menu.index(this);
+	console.log("click index:", currentIndex);
+	showImage();
+});
