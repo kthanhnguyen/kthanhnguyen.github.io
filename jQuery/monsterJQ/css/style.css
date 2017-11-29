@@ -1,0 +1,94 @@
+#container{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2%;
+	width: 500px;
+}
+
+#control-panel {
+	height: 70px;
+	background: #c2c2c2;
+	position: relative;
+	background: url("../images/headerbg.png") center no-repeat;
+	border: 1px solid green;
+}
+
+#monster {
+	height: 500px;
+	background: #000;
+	position: relative;
+	background: url("../images/background.jpg") center no-repeat;
+	border: 1px solid black;
+}
+
+#mon1,#mon2,#mon3,#mon4,
+#mon5,#mon6,#mon7,#mon8 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: url("../images/monster.png") center no-repeat;
+	z-index: 888;
+	background-size: 95px;
+}
+div#score {
+	height: 60px;
+	font-size: 35px;
+	float: right;
+	margin-right: 5px;
+	cursor: default;
+	color: #FFF;
+}
+span.title {
+	margin-left: 5px;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+div#pause {
+	float: left;
+	display: inline-block;
+	width: 50px;
+	height: 100%;
+	background: url("../images/pause.png") center no-repeat;
+	margin-left: 2%;
+}
+
+div#reset {
+	float: left;
+	height: 100%;
+	width: 50px;
+	background: url("../images/reset.png")center no-repeat;
+	margin-left: 3%;
+}
+
+div#heart,
+div#bomb {
+	height: 100%;
+	width: 60px;
+	float: left;
+	text-align: center;
+	display: table;
+	background: url("../images/heart.png") center no-repeat;
+	background-size: 80%;
+	margin-left: 3%;
+}
+
+div#heart span,
+div#bomb span {
+	display: table-cell;
+	vertical-align: middle;
+	color: #FFF;
+	font-size: 30px;
+}
+
+div#bomb {
+	background: url("../images/bomb.png") center no-repeat;
+	cursor: pointer;
+	background-size: 95%;
+}
+
+div#bomb:hover, div#pause:hover, div#reset:hover {
+	opacity: 0.5;
+}
