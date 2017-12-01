@@ -6,7 +6,7 @@
 }
 
 #control-panel {
-	height: 70px;
+	height: 100px;
 	background: #c2c2c2;
 	position: relative;
 	background: url("../images/headerbg.png") center no-repeat;
@@ -30,9 +30,17 @@
 	z-index: 888;
 	background-size: 95px;
 }
-div#score {
-	height: 60px;
-	font-size: 35px;
+#score {
+	height: 50px;
+	font-size: 32px;
+	float: right;
+	margin-right: 5px;
+	cursor: default;
+	color: #FFF;
+}
+#level {
+	height: 50px;
+	font-size: 28px;
 	float: right;
 	margin-right: 5px;
 	cursor: default;
@@ -46,7 +54,18 @@ span.title {
 	font-weight: bold;
 }
 
-div#pause {
+#status {
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	position: absolute;
+	top: 150px;
+	display: none;
+	z-index: 999;
+}
+
+#pause {
 	float: left;
 	display: inline-block;
 	width: 50px;
@@ -55,7 +74,7 @@ div#pause {
 	margin-left: 2%;
 }
 
-div#reset {
+#reset {
 	float: left;
 	height: 100%;
 	width: 50px;
@@ -63,8 +82,8 @@ div#reset {
 	margin-left: 3%;
 }
 
-div#heart,
-div#bomb {
+#heart,
+#bomb {
 	height: 100%;
 	width: 60px;
 	float: left;
@@ -75,20 +94,20 @@ div#bomb {
 	margin-left: 3%;
 }
 
-div#heart span,
-div#bomb span {
+#heart span,
+#bomb span {
 	display: table-cell;
 	vertical-align: middle;
 	color: #FFF;
 	font-size: 30px;
 }
 
-div#bomb {
+#bomb {
 	background: url("../images/bomb.png") center no-repeat;
 	cursor: pointer;
 	background-size: 95%;
 }
 
-div#bomb:hover, div#pause:hover, div#reset:hover {
+#bomb:hover, div#pause:hover, div#reset:hover {
 	opacity: 0.5;
 }
