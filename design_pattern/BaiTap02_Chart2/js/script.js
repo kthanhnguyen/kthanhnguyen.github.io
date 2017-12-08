@@ -1,7 +1,7 @@
 var options = {
 	canvas : mainCanvas,
-	dataOy: [0, 1, 2, 3, 4],
-	dataLine: [1.5, 3.5, 1.5, 3.5, 2.5, 3.2, 3.5]
+	dataOy: [0, 1, 2, 3, 4],  //data default in Oy.
+	dataLine: [1.5, 3.5, 1.5, 3.5, 2.5, 3.2, 3.5] //data use for draw curves line
 };
 
 var chart = (function(){
@@ -9,12 +9,12 @@ var chart = (function(){
 	canvas.width = 550;
 	canvas.height = 350;
 	var ctx = canvas.getContext("2d");
-	var columnSpace = 70;
-	var rowSpace = 30;
-	var space = 2;
+	var columnSpace = 70; //top to Oy
+	var rowSpace = 30; //space between each data on Ox
+	var space = 2; //distance between Oy and value on Oy
 	var maxValue = options.dataOy.length - 1;
-	var xScale;
-	var yScale;
+	var xScale; //scale following Ox
+	var yScale; //scale following Oy
 	var stepSize = 1;
 	var y;
 	var count = 0;
@@ -27,7 +27,8 @@ var chart = (function(){
 		}
 	}
 
-
+	/*------------private function--------------*/
+	//Draw Chart
 	var privateDrawChart = function(){
 		xScale = (canvas.width - rowSpace) / options.dataLine.length;
 		yScale = (canvas.height - columnSpace - space) / maxValue;
@@ -88,7 +89,8 @@ var chart = (function(){
 		}
 		ctx.stroke();
 	}
-
+	
+	/*------------public function--------------*/
 	var publicDrawChart = function(){
 		if(flag){
 			privateDrawChart();
@@ -101,10 +103,6 @@ var chart = (function(){
 		draw: publicDrawChart
 	}
 
-
 })();
 
-// $(document).ready( function () {
-//     chart.draw();
-// });
 chart.draw();
