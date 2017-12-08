@@ -25,11 +25,13 @@ var chart = (function(){
 	var maxValue = 0;
 	var flag = true;
 
+	//check input
 	for (categ in data) {
 		if(data[categ] > maxValue) {
 			maxValue = data[categ] + 1;
 		}
 	}
+
 	var space = 10; //Distance of draw letters
 	var xScale = (canvas.width - colPosition) / data.length; //width x of column
 	var yScale = (canvas.height - colPosition - space) / maxValue;  //distance between each honrizontal line
@@ -39,7 +41,7 @@ var chart = (function(){
 			flag = false;
 		}
 	}
-
+	/*----------private function--------*/
 	//function draw chart
 	privateDrawChart = function () {
 		var scale;
@@ -65,6 +67,7 @@ var chart = (function(){
 			var x = (i + 0.7) * xScale; //position x will draw next
 			ctx.fillText(columnName[i % columnName.length], x, canvas.height - colPosition + space);
 		}
+
 		ctx.stroke();
 
 		//draw column chart
@@ -88,7 +91,7 @@ var chart = (function(){
 		detail.innerHTML = detailHTML;
 	}
 
-
+	/*----------public function--------*/
 	var publicDrawChart = function(){
 		if(flag){
 			privateDrawChart();
@@ -101,7 +104,6 @@ var chart = (function(){
 	return{
 		draw: publicDrawChart
 	}
-
 
 })();
 

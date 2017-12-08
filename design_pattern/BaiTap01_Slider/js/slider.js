@@ -1,18 +1,18 @@
 var slider = (function(){
-	var currentIndex = 1;
+	var currentIndex = 1; //image current
 	var run;
-	var privateSlideshow = $(".slide_img");
+	var privateSlideShow = $(".slide_img");
 	var privateThumb = $(".thumbnails_img");
 
 	function showImage() {
-		if (currentIndex > privateSlideshow.length - 1) {
+		if (currentIndex > privateSlideShow.length - 1) {
 			currentIndex = 0;
 		} else if (currentIndex < 0) {
-			currentIndex = privateSlideshow.length - 1;
+			currentIndex = privateSlideShow.length - 1;
 		}
 
-		privateSlideshow.hide();
-		privateSlideshow.eq(currentIndex).show();
+		privateSlideShow.hide();
+		privateSlideShow.eq(currentIndex).show();
 		currentImage();
 		clearTimeout(run);
 		run = setTimeout(function() {
@@ -25,17 +25,20 @@ var slider = (function(){
 		privateThumb.removeClass("active");
 		privateThumb.eq(currentIndex).addClass("active");
 	}
-
+	/*-------private function------*/
+	//previous button event
 	function privatePrev() {
 		currentIndex--;
 		showImage();
 	}
 
+	//next button event
 	function privateNext() {
 		currentIndex++;
 		showImage();
 	}
-
+	
+	//photo click event
 	function privateClick_Thumb(value) {
 		currentIndex = privateThumb.index(value);
 		console.log(currentIndex);
@@ -67,13 +70,15 @@ var slider = (function(){
 
 $(document).ready(function () {
 	slider.auto();
-
+	
 	$("#prev").on("click", function () {
 	  slider.prev();
 	});
+	
 	$("#next").on("click", function () {
 	  slider.next();
 	});
+	
 	$(".thumbnails_img").on("click", function () {
 	  slider.thumbnails(this);
 	});

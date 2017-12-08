@@ -1,4 +1,4 @@
-var ratio = {
+var data = {
 	"Xuất sắc" : 10,
 	"Tốt" : 20,
 	"Trung bình" : 10,
@@ -7,7 +7,7 @@ var ratio = {
 
 var options = {
 	canvas : mainCanvas,
-	data: ratio,
+	data: data,
 	colors : ["#4267B1", "#DB3D26", "#F8991D", "#189747"],
 	doughnutHoleSize: 0.5,
 	detail: detail
@@ -22,16 +22,20 @@ var chart = (function(){
 
 	var flag = true;
 	var val;
-
+	
+	//Check input
 	for (categ in options.data) {
 		if (options.data[categ] < 0 || options.data[categ] > 100) {
 			flag = false;
 		}
+		
 		var categ, total = 0;
+		
 		for(categ in options.data) {
 			val = options.data[categ];
 			total += val;
 		}
+		
 		if(total !== 100) {
 			flag = false;
 		}
@@ -45,7 +49,9 @@ var chart = (function(){
 		ctx.closePath();
 		ctx.fill();
 	}
-
+	
+	/*----------private function--------*/
+	//Draw Chart
 	var privateDrawChart = function(){
 		var total = 0;
 		var color_index = 0;
@@ -90,8 +96,9 @@ var chart = (function(){
 		}
 	}
 
+	//Draw the proportions in the figure
 	var privateDrawLabel = function(){
-		var start_angle = 1.5 * Math.PI;;
+		var start_angle = 1.5 * Math.PI; //draw label for each slice
 
 		for (categ in options.data){
 			var val = options.data[categ];
@@ -103,10 +110,13 @@ var chart = (function(){
 
 			if (options.doughnutHoleSize) {
 				var offset = (pieRadius * options.doughnutHoleSize) / 2;
-
+				
+				//determine position of label lay at center position in a slice
+				//x = R * cos(angle), y = R * sin(angle)
 				labelX = canvas.width / 2 + (offset + pieRadius / 2) * Math.cos(start_angle + sliceAngle / 2);
 				labelY = canvas.height / 2 + (offset + pieRadius / 2) * Math.sin(start_angle + sliceAngle / 2);
 			}
+			
 			var labelText = Math.round(100 * val / total);
 			ctx.fillStyle = "black";
 			ctx.font = "bold 20px Arial";
@@ -114,7 +124,8 @@ var chart = (function(){
 			start_angle += sliceAngle;
 		}
 	}
-
+	
+	//Draw detailed information
 	var privateDrawDetail = function(){
 		if (options.detail){
 			color_index = 0;
@@ -128,6 +139,7 @@ var chart = (function(){
 		}
 	}
 
+	/*----------public function--------*/
 	var publicDrawChart = function(){
 		if(flag){
 			privateDrawChart();
@@ -141,7 +153,6 @@ var chart = (function(){
 	return{
 		draw: publicDrawChart
 	}
-
 
 })();
 

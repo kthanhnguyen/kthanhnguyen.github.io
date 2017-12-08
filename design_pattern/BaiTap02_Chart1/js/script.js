@@ -27,7 +27,29 @@ var chart = (function(){
 	var success = 0;
 	var total = 0;
 	var tmp = 0;
+	var flag = true;
 
+    //check input
+	for (var i in data) {
+		if (data[i] < 0 || data[i] > 100) {
+			flag = false;
+		}
+		
+		var categ, checkTotal = 0;
+		
+		for(categ in options.data) {
+			val = options.data[categ];
+			checkTotal += val;
+		}
+		
+		if(checkTotal !== 100) {
+		flag = false; 
+		}
+	}
+	
+	/*------------private function--------------*/
+    
+	//function draw success slice or fail slice
 	var privateDrawChart2D = function (space, color, start_angle, end_angle, numDraw) {
         ctx.save();	 // save default state
         ctx.scale(xScale, yScale); //scale pie from circle to elipse
@@ -43,7 +65,8 @@ var chart = (function(){
         }
         ctx.fill();
     };
-
+	
+	//draw chart 3D
     var privateDrawChart3D = function () {
         var i;
 		for (categ in data) {
@@ -65,7 +88,8 @@ var chart = (function(){
             }
         }
 	};
-
+	
+	//Draw the percentage line of data
 	var privateDrawLine = function(firstX, firstY, secondX, secondY, width, color) {
 		ctx.strokeStyle = color;
 		ctx.lineWidth = 4;
@@ -75,7 +99,8 @@ var chart = (function(){
 		ctx.lineTo (secondX ,secondY);
 		ctx.stroke();
 	}
-
+	
+	//draw detail title for each slice
 	var privateDrawText = function(){
 		var radian = 0;
 		var val = data[categ];
@@ -106,6 +131,7 @@ var chart = (function(){
 			privateDrawLine(60, 80, lableX2 + 90, lableY2 - 60, 90, colors[1]); // block success
 			privateDrawLine(670, 40, lableX1 - 70, lableY1 -50, -100, colors[3]); //block fail
 		}
+		
 		//draw name chart
 		ctx.fillStyle = "#4CB9E0";
 		ctx.font = "20px Arial";
@@ -119,8 +145,12 @@ var chart = (function(){
 	}
 
 	var publicDrawChart3D = function(){
-		privateDrawChart3D();
-		privateDrawText();
+		if(flag){
+			privateDrawChart3D();
+			privateDrawText();
+		} else {
+			alert("Wrong input !!!");
+		}
 	}
 
 	return {
@@ -128,6 +158,4 @@ var chart = (function(){
 	}
 })();
 
-$(document).ready( function () {
-    chart.draw();
-});
+chart.draw();
