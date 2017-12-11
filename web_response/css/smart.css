@@ -1,0 +1,40 @@
+@media screen and (max-width: 644px) {
+
+header{float:none;}
+
+div.inner {
+	min-width:50%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 1%;
+	text-align: center;
+	width: 98%;
+}
+
+.phone_pc{
+	display:none !important;
+}
+
+.phone_sp{
+	display:inline-block !important;
+}
+
+div.float,
+img.float,
+a.float,
+.float{
+	float:none;
+	text-align:center;
+	margin: 7px auto;
+	display: inline-block;
+}
+
+img.header_logo{
+	height: auto;
+}
+
+div.banner{
+	display:none;
+}
+
+}
