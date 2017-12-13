@@ -178,5 +178,93 @@ ul.ul_introduction{
 	float: none;
 	margin-right: 0;
 }
+.img_01_facial{
+	float: none;
+}
+
+/*==============================================
+	Bihda
+==============================================*/
+.group_bihda{
+	margin-bottom: 20px;
+}
+.img_btn_bihda{
+	margin-bottom: 0%;
+}
+
+/*==============================================
+	acty
+==============================================*/
+
+div.group_acty_text{
+	width: 100%;
+	float: none;
+}
+
+.img_01_acty{
+	width: 80%;
+	float: none;
+}
+
+.img_02_acty{
+	width: 95%;
+}
+
+.img_03_acty{
+	width: 95%;
+}
+
+
+.img_01_case{
+	width: 98%;
+	padding-right: 0px;
+	padding-bottom: 5px;
+}
+
+.img_02_case{
+	width: 98%;
+	padding-bottom: 15px;
+}
+
+.img_left{
+	float: none;
+	padding-left: 0%;
+}
+
+/*==============================================
+	QA
+==============================================*/
+.q_title_text{
+	padding-left: 15%;
+	line-height: 40px;
+}
+
+.qa_group{
+	width: 90%;
+}
+
+.a_title_text{
+	padding-left: 15%;
+}
+
+/*==============================================
+	Access
+==============================================*/
+.img_map_access{
+	width: 90%;
+}
+
+.group_access_left, .group_access_right{
+	float: none;
+	width: 95%;
+}
+
+.box_text{
+	width: 95%;
+}
+
+/*.box_text_text{
+	line-height: 300px;
+}*/
 
 }
