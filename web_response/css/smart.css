@@ -187,9 +187,25 @@ ul.ul_introduction{
 ==============================================*/
 .group_bihda{
 	margin-bottom: 20px;
+	float: none;
+	width: 95%;
 }
 .img_btn_bihda{
 	margin-bottom: 0%;
+}
+
+.img_gr_01{
+	width: 90%;
+}
+
+/*==============================================
+	hair_growth
+==============================================*/
+
+.img_button_hair{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: block;
 }
 
 /*==============================================
@@ -214,15 +230,18 @@ div.group_acty_text{
 	width: 95%;
 }
 
+/*==============================================
+	case
+==============================================*/
 
 .img_01_case{
-	width: 98%;
+	width: 95%;
 	padding-right: 0px;
 	padding-bottom: 5px;
 }
 
 .img_02_case{
-	width: 98%;
+	width: 95%;
 	padding-bottom: 15px;
 }
 
@@ -253,18 +272,39 @@ div.group_acty_text{
 .img_map_access{
 	width: 90%;
 }
-
+.map_text{
+	margin-left: 0%;
+	text-align: center;
+}
 .group_access_left, .group_access_right{
 	float: none;
 	width: 95%;
 }
 
+/*==============================================
+	reruit
+==============================================*/
+
 .box_text{
-	width: 95%;
+	width: 85%;
 }
 
-/*.box_text_text{
+.box_text_text{
 	line-height: 300px;
-}*/
+}
+
+.group_reruit_text{
+	float: none;
+	width: 100%;
+}
+
+.img_01_reruit{
+	padding-left: 0%;
+}
+
+.img_02_reruit{
+	float: none;
+	padding-right: 0%;
+}
 
 }
