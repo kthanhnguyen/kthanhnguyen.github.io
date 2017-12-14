@@ -834,6 +834,7 @@ div.group_depilation_text{
 
 .p_deplition{
 	letter-spacing: 0.075em;
+	font-size: 14px;
 }
 
 .text_color{
@@ -850,7 +851,7 @@ div.group_depilation_text{
 /*==============================================
 	Bihda
 ==============================================*/
-div.group_bihda{
+.group_bihda{
 	display: inline-block;
 	width: 100%;
 	padding-bottom: 20px;
@@ -893,6 +894,14 @@ div.group_acty_text{
 div.group_acty_text2{
 	width: 50%;
 }
+
+/*==============================================
+	hair_ growth
+==============================================*/
+.img_button_hair{
+	margin-bottom: 10px;
+}
+
 
 /*==============================================
 	case
@@ -1008,15 +1017,54 @@ div.group_case{
 ==============================================*/
 .box_text{
 	background-color: #D9D9D9;
-	width: 100%;
-	max-width: 500px;
-	*width: 500px;
-	height: 500px;
 	text-align: center;
+	width: 92%;
+	margin: 0 30px 10px 30px;
 }
 
 .box_text_text{
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 500px;
+}
+
+.style_text_reruit{
+	font-weight: bold;
+}
+
+.group_reruit{
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.group_reruit_text{
+	width: 60%;
+	float: left;
+}
+
+.img_01_reruit{
+	padding-left: 5%;
+}
+
+.img_02_reruit{
+	float: left;
+	padding-right: 5%;
+}
+
+.table_reruit{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.table_reruit td{
+    border: 2px solid #DEDAD7;
+    padding: 8px;
+}
+
+.table_color{
+	background-color: #FEDEDF;
 }
