@@ -1,0 +1,57 @@
+charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;}
+:focus {outline: 0;}
+
+ol, ul {list-style: none;}
+caption{font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a{ text-decoration:none; font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;}
+a img {border: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+body {
+    color: #703200;
+    font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+    font-size: 12px;
+	background:url(../images/bg.png) #F66E00 no-repeat center top;
+}
+
+.clear_fix{
+	clear:both;
+}
+
+
+div.container{
+	width: 80%;
+	margin:0 auto;
+	height: auto;
+}
+
+div.logo{
+	max-width:294px;
+	height:auto;
+	float:left;
+	width:100%;
+	position:absolute;
+}
+
+a.logo_top{
+	width: 100%;
+	height: auto;
+	display:inline-block;
+	text-align:left;
+}
+
+a.logo_top img{
+	width: 100%;
+	height: 169px;
+}
+
+div.header-right{
+	float: right;
+	text-align: right;
+	display: inline-block;
+}
+
