@@ -87,76 +87,10 @@ div.nav{
 	text-align: center;
 	z-index:9999999;
 	height:40px;
+	color: #FFF;
+	font-size: 14px;
 }
-.mean-container .mean-nav ul li a.menu_1:hover img,
-.mean-container .mean-nav ul li.menu_1 a.active img,
-.mean-container .mean-nav ul li a.menu_2:hover img,
-.mean-container .mean-nav ul li.menu_2 a.active img,
-.mean-container .mean-nav ul li a.menu_3:hover img,
-.mean-container .mean-nav ul li.menu_3 a.active img,
-.mean-container .mean-nav ul li a.menu_4:hover img,
-.mean-container .mean-nav ul li.menu_4 a.active img,
-.mean-container .mean-nav ul li a.menu_5:hover img,
-.mean-container .mean-nav ul li.menu_5 a.active img,
-.mean-container .mean-nav ul li a.menu_6:hover img,
-.mean-container .mean-nav ul li.menu_6 a.active img,
-.mean-container .mean-nav ul li a.menu_7:hover img,
-.mean-container .mean-nav ul li.menu_7 a.active img,
-.mean-container .mean-nav ul li a.menu_8:hover img,
-.mean-container .mean-nav ul li.menu_8 a.active img
-{
-	display:none
-	}
 
-.mean-container .mean-nav ul li a.menu_1{
-	background:url(../images/menu_1.png)  no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_2{
-	background:url(../images/menu_2.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_3{
-	background:url(../images/menu_3.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_4{
-	background:url(../images/menu_4.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_5{
-	background:url(../images/menu_5.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_6{
-	background:url(../images/menu_6.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_7{
-	background:url(../images/menu_7.png) no-repeat center center;
-	}	
-.mean-container .mean-nav ul li a.menu_1:hover,
-.mean-container .mean-nav ul li a.menu_1.active{
-	background:url(../images/menu_1_hover.png)  no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_2:hover,
-.mean-container .mean-nav ul li a.menu_2.active{
-	background:url(../images/menu_2_hover.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_3:hover,
-.mean-container .mean-nav ul li a.menu_3.active{
-	background:url(../images/menu_3_hover.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_4:hover,
-.mean-container .mean-nav ul li a.menu_4.active{
-	background:url(../images/menu_4_hover.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_5:hover,
-.mean-container .mean-nav ul li a.menu_5.active{
-	background:url(../images/menu_5_hover.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_6:hover,
-.mean-container .mean-nav ul li a.menu_6.active{
-	background:url(../images/menu_6_hover.png) no-repeat center center;
-	}
-.mean-container .mean-nav ul li a.menu_7:hover,
-.mean-container .mean-nav ul li a.menu_7.active{
-	background:url(../images/menu_7_hover.png) no-repeat center center;
-	}	
 img.menu_hide,
 img.line_menu{
 	display:none;
