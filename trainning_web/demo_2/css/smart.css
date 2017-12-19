@@ -1,66 +1,55 @@
 @media screen and (max-width: 644px) {
+    body{
+        background:url(../images/body_bg_p.jpg) repeat left top;    
+    }   
+    header{
+        float:none;
+        padding-bottom:5px;
+        margin-bottom:20px;
+    }
+    div.inner {
+        width: 98%;
+        min-width: 50%!important;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 1%;
+        text-align: center;
+    }
+    
+    body h1 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    div.float, 
+    img.float, 
+    .float {
+        float: none;
+        text-align: center;
+        margin: 7px auto;
+        position: static;
+    }
+    
+    /*display block for link when show in sp*/
+    .phone-desktop {display: none;}
+    .phone-mobie {display: block;}
+    
+    div.header-right {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+    #banner {display: none;}
 
- body{
-	background:url(../images/body_bg_p.jpg) repeat left top;
-}
-
-div.float,
-img.float,
-a.float,
-.float{
-	float:none;
-	text-align:center;
-	margin: 7px auto;
-	display: inline-block;
-}
-
-div.header{
-	float:none;
-	padding-bottom:5px;
-	margin-bottom:20px;
-}
-
-div.inner {
-	height: auto;
-	margin: 0 auto;
-	padding: 0 1%;
-	text-align: center;
-	width: 98%;
-	min-width:50%;
-}
-
-a.logo_top img{
-	height:auto;
-}
-
-.phoneDesktop{
-	display:none !important;
-}
-
-.phoneMobile{
-	display:inline-block !important;
-}
-
-a.logo_top img{
-	height:auto;
-}
-
-div.header-right {
-	float: none;
-	width: 100%;
-    padding: 10px 0;
-}
-div#banner {display: none;}
-
-/*box*/
+    /*box*/
     ul.art_ul li.art_li_cen {
-    	margin-top: 20px;
-    	margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     img.art_img_2 {
-    	width: 100%;
-    	display: inline-block!important;
-    	margin-bottom: 10px!important;
+        width: 100%;
+        display: inline-block!important;
+        margin-bottom: 10px!important;
     }
 
     div.art_box_1 img.art_img_3 {
@@ -86,8 +75,8 @@ div#banner {display: none;}
 
     /*footer*/
     footer {
-    	padding-bottom: 0;
-	    margin-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     footer div.ft-bg-dra {
         float: none;
@@ -117,6 +106,5 @@ div#banner {display: none;}
     footer p.copyright {
         margin-top: 10px;
         position: static;
-}
-
+    }
 }
