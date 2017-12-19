@@ -1,0 +1,122 @@
+@media screen and (max-width: 644px) {
+
+ body{
+	background:url(../images/body_bg_p.jpg) repeat left top;
+}
+
+div.float,
+img.float,
+a.float,
+.float{
+	float:none;
+	text-align:center;
+	margin: 7px auto;
+	display: inline-block;
+}
+
+div.header{
+	float:none;
+	padding-bottom:5px;
+	margin-bottom:20px;
+}
+
+div.inner {
+	height: auto;
+	margin: 0 auto;
+	padding: 0 1%;
+	text-align: center;
+	width: 98%;
+	min-width:50%;
+}
+
+a.logo_top img{
+	height:auto;
+}
+
+.phoneDesktop{
+	display:none !important;
+}
+
+.phoneMobile{
+	display:inline-block !important;
+}
+
+a.logo_top img{
+	height:auto;
+}
+
+div.header-right {
+	float: none;
+	width: 100%;
+    padding: 10px 0;
+}
+div#banner {display: none;}
+
+/*box*/
+    ul.art_ul li.art_li_cen {
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+    }
+    img.art_img_2 {
+    	width: 100%;
+    	display: inline-block!important;
+    	margin-bottom: 10px!important;
+    }
+
+    div.art_box_1 img.art_img_3 {
+        float: none;
+        margin: auto;
+    }
+    div.art_box_1 div.text_box_1 {
+        float: none;
+        width: 100%;
+    }
+    div.art_box_1 div.text_box_1 p.art_btn {float: none;}
+    div.art_box_2 div.art_box_2_child_1 {
+        float: none;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    div.art_box_2 div.art_box_2_child_2 {
+        float: none;
+        width: auto;
+        padding: 15px;
+        margin: auto auto 20px auto;
+    }
+
+    /*footer*/
+    footer {
+    	padding-bottom: 0;
+	    margin-bottom: 0;
+    }
+    footer div.ft-bg-dra {
+        float: none;
+        display: none;
+    }
+    footer .ft_top {margin: 0;}
+    footer .ft_top div.menu_footer {
+        float: none;
+        max-width: none;
+        width: auto;
+    }
+    footer .ft_top div.menu_footer ul {
+        display: block;
+        vertical-align: top;
+    }
+    footer .ft_top div.menu_footer .ft_u1 {
+        width: 162px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+    footer .ft_top div.ft_box {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    footer .ft_top div.ft_box div.ft_box_1 {margin: auto;}
+    footer p.copyright {
+        margin-top: 10px;
+        position: static;
+}
+
+}
