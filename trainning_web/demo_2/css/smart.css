@@ -1,7 +1,7 @@
 @media screen and (max-width: 644px) {
     body{
-        background:url(../images/body_bg_p.jpg) repeat left top;    
-    }   
+        background:url(../images/body_bg_p.jpg) repeat left top;
+    }
     header{
         float:none;
         padding-bottom:5px;
@@ -15,7 +15,7 @@
         padding: 0 1%;
         text-align: center;
     }
-    
+
     body h1 {
         width: 100%;
         float: none;
@@ -29,11 +29,11 @@
         margin: 7px auto;
         position: static;
     }
-    
+
     /*display block for link when show in sp*/
     .phone-desktop {display: none;}
     .phone-mobie {display: block;}
-    
+
     div.header-right {
         float: none;
         width: 100%;
@@ -73,7 +73,7 @@
         margin: auto auto 20px auto;
     }
 
-    /*footer*/
+    /*===============footer===============*/
     footer {
         padding-bottom: 0;
         margin-bottom: 0;
@@ -106,5 +106,85 @@
     footer p.copyright {
         margin-top: 10px;
         position: static;
+    }
+
+    /*=============concept===============*/
+    .h2_concept{
+        background: none;
+    }
+
+    body h2 span{
+        margin-bottom: 10px;
+    }
+
+    body h2{
+        height: 0px;
+    }
+
+    p.p1_concept{
+        max-width: 98%;
+        padding: 0 1% 0 1%;
+        margin: 0;
+    }
+    div.imagesTop_concept img{
+        margin: 0;
+        margin-top: 5px;
+    }
+    div.group_concept img{
+        float: none;
+    }
+    div.group_concept .infoContent{
+        margin:0px;
+        max-width: 98%;
+        padding: 0 1% 0 1%;
+    }
+    div.group_concept .infoContent p{
+        max-width: 100%;
+    }
+    p.pChechBox_concept{
+        max-width: 100%;
+        text-align: left;
+        text-indent: 0px;
+    }
+    ul.ulCheckBox_concept{
+        max-width: 98%;
+        margin-left: 2%;
+    }
+    ul.ulCheckBox_concept li{
+        max-width: 100%;
+    }
+    /*===============hand================*/
+
+    div.group-btn{
+      margin-left: 0%;
+    }
+
+    .btn_left{
+      margin-left: 0%;
+    }
+    .btn_bottom{
+        float: none;
+        margin: 0 auto;
+    }
+
+    /*===============gallery================*/
+    div.pagination{
+        margin-left: 0;
+    }
+
+    /*===============nailist================*/
+    div.group_nailist img{
+        float: none;
+    }
+    table.table_nail{
+      font-size: 12px;
+    }
+    div.group_nailist .infoNail_img{
+      background-size: 95%;
+      margin: 0 auto;
+    }
+    div.group_nailist .infoNail_img p{
+        padding: 5px;
+        padding-right: 25px;
     }
 }
