@@ -187,4 +187,32 @@
         padding: 5px;
         padding-right: 25px;
     }
+
+    /*===============access================*/
+    div.info_bot_foot{
+      text-align: left;
+    }
+
+    div.padding_bot_foot{
+        margin: 0 auto;
+        background-size: 210%;
+    }
+
+    /*===============contact================*/
+    .phone_contact{
+        margin-left: 0%;
+    }
+
+    .padding_left_bot{
+        text-align: left;
+    }
+
+    table.table_contact input{
+      width: 200px;
+      height: 20px;
+    }
+
+    .text_right_contact{
+        padding-right: 0;
+    }
 }
