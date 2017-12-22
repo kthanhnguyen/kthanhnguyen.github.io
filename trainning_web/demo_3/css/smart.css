@@ -1,0 +1,134 @@
+@media screen and (max-width: 644px) {
+   div.header{
+        float:none;
+        height:auto;
+    }
+    div.inner {
+        height: auto;
+        margin: 0 auto;
+        padding: 0 1%;
+        text-align: center;
+        width: 98%;
+        min-width:50%;
+    }
+
+    div.float, 
+    img.float, 
+    .float {
+        float: none;
+        text-align: center;
+        margin: 7px auto;
+        position: static;
+    }
+
+    div.content, div.header_right{
+        float:none;
+        margin:0 auto;
+        width:100%;
+        max-width:100%;
+    }
+
+    .show_sp {
+        display:block !important;
+    }
+    .show_pc {
+        display:none !important;
+    }
+
+    div.header-left {
+        width:100%;
+    }
+    ul.menu_header li{
+        float:none;
+    }
+
+    ul.list_1 , ul.list_2 {
+        width:100%;
+        text-align:center;
+    }
+    ul.list_1 li{
+        float:none;
+        margin-bottom:30px;
+    }
+    ul.list_1 li.li_2 {
+        margin-bottom: 30px;
+    }
+    ul.list_2 li{
+        margin:5px auto;
+        width:96%;
+    }
+
+    .section_list2 {
+        width:96%;
+        padding:2% 2%;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .button2_home {
+        display:block;
+    }
+    .button2_home img.img_resize {
+        width:100%;
+        max-width:410px;
+        height:auto;
+    }
+
+    dl.history_home dt {
+        float:none;
+        width:100%;
+        text-align:left;
+        padding-left:20px;
+        border: none;
+    }
+    dl.history_home dd {
+        width: 98%;
+        text-align:left;
+        }
+    dl.history_home dd.border_none {
+        border:none;
+    }
+
+    div.aside {
+        float:none;
+        margin:0 auto;
+        max-width:100%;
+    }
+
+    .aside-menu {
+        margin-top:20px;
+    }
+
+    div.footer{
+        width: 98%;
+        margin: 30px auto 0 auto;
+        height:auto;
+        display:block;
+        padding:10px;
+        float:none;
+        background:url(../images/footer_bg_sp.jpg) repeat left top;
+    }
+    .footer_right {
+        float:none;
+        width:90%;
+        margin-top:20px;
+    }
+    .footer_left {
+        margin-top:20px;
+        float:none;
+    }
+    ul.footer_list1, ul.footer_list2 {
+        margin:0 auto;
+    }
+
+    img.img_resize_foot {
+        width:100%;
+        max-width:472px;
+        height:auto;
+    }
+    /*p.copyright {
+      margin-top: 10px;
+    }*/
+
+
+}
