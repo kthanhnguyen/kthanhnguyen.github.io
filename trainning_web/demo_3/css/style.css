@@ -458,7 +458,7 @@ p.copyright {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  position: absolute;
+/*  position: absolute;*/
   background-color: #D2C1A5;
   margin: 0;
 }
@@ -466,13 +466,10 @@ p.copyright {
 #page-top {
     bottom: 20px;
     position: fixed;
-    right: 200px;
+    right: 15%;
     z-index: 500;
 }
 
-/*#page-top a {
+#page-top a {
     display: block;
-    padding: 15px 0;
-    width: 80px;
 }
-*/
