@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 670px) {
    div.header{
         float:none;
         height:auto;
@@ -12,8 +12,8 @@
         min-width:50%;
     }
 
-    div.float, 
-    img.float, 
+    div.float,
+    img.float,
     .float {
         float: none;
         text-align: center;
@@ -43,9 +43,12 @@
         width:100%;
     }
 
-
     ul.menu_header li{
         float:none;
+    }
+
+    div.article-index img.img_1_home {
+        margin-top: 20px;
     }
 
     ul.list_1 , ul.list_2 {
