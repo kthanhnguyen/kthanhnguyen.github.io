@@ -33,15 +33,44 @@ $(function() {
 /*==============================================
 	Scroll
 ==============================================*/
-$(function() {
-    $("a[href^=#]").click(function() {
-        var speed = 500;
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $("html, body").animate({
-            scrollTop: position
-        }, speed, "swing");
+// $(function() {
+//     $("a[href^=#]").click(function() {
+//         var speed = 500;
+//         var href = $(this).attr("href");
+//         var target = $(href == "#" || href == "" ? 'html' : href);
+//         var position = target.offset().top;
+//         $("html, body").animate({
+//             scrollTop: position
+//         }, speed, "swing");
+//         return false;
+//     });
+// });
+
+
+$(document).ready(function() {
+    var scrollTop_class = $('#page-top');
+    scrollTop_class.hide();
+
+    //Pull down the 100px will appear button
+    var offset = 100;
+
+    //sliding time
+    var time = 500;
+
+    //Check for node hiding
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > offset) {
+            scrollTop_class.fadeIn();
+        } else{
+            scrollTop_class.fadeOut();
+        }
+    });
+
+    //The click event will slide to the top
+    scrollTop_class.click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, time);
         return false;
     });
 });
