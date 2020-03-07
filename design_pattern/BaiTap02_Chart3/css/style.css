@@ -1,0 +1,19 @@
+body{
+	margin: 0 auto;
+	text-align: center;
+	width: 750px;
+	user-select: none;
+}
+
+#mainCanvas{
+	margin-top: 5%;
+	float: left;
+}
+
+#detail{
+	float: right;
+	text-align: left;
+	margin-top: 25%;
+	font-size: 19px;
+	font-weight: bold;
+}

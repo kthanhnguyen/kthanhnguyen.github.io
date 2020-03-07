@@ -1,0 +1,41 @@
+.container {
+	margin: 0 auto;
+	width: 32%;
+}
+
+#text-day { display: inline-flex; }
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+#table_calendar{border: 2px solid #2D2D2D;}
+table {
+	text-align: center;
+	background-color: white;
+	
+}
+
+td {
+	width: 100px;
+	height: 25px;
+	border: 1px solid black;
+}
+
+.choose td {background-color: #A9CCE3;}
+.choose td:hover {background-color: #00ACE6; cursor:pointer;}
+
+.weekdays td {
+	color: red; 
+	font-size: 20px; 
+	font-weight: bold; 
+	background-color: #BEBEBE;
+}
+
+.choose select {width: 100%; height: 100%;}
+
+.select_day:hover {
+	border: 1px solid red;
+	cursor:pointer;
+}

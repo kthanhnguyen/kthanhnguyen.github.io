@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>Game Monster</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<canvas id="header_canvas" width="500px" height="100px" style="border: 1px solid green"></canvas>
+			<canvas id="main_canvas" width="500px" height="500px" style="border: 1px solid black"></canvas>
+		</div>
+		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src="js/monster.js"></script>
+		<script type="text/javascript">
+			var game = new Game();
+			game.init();
+			game.addEventClick();
+			setInterval(function() { game.newMonster() }, 800);
+			game.start();
+		</script>
+	</body>
+</html>
